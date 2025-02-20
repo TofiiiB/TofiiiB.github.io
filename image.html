@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Google Image Search</title>
+        <style>
+            body {
+                font-family: Aria, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .search-container{
+                text-align:center;
+            }
+            input[type="text"] {
+                width: 500px;
+                padding: 10px;
+                border-radius: 25px;
+                border: 1px solid black;
+            }
+            .buttons {
+                margin-top: 20px;
+            }
+            button {
+                background-color: gainsboro;
+                border: 1px solid gray;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: darkgray;
+            }
+            .links {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .links a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="links">
+            <a href="googlesearch.html">Google Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
+        <div class="search-container">
+            <h1>Google Image</h1>
+            <form action="https://images.google.com/search">
+                <input type="text" name="q">
+                <div class="buttons">
+                    <button type="submit">Google Image Search</button>
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Google Advanced Search</title>
+        <style>
+            body {
+                font-family: Aria, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+            .search-container{
+                width: 500px;
+                text-align: left;
+            }
+            input[type="text"] {
+                width: 500px;
+                padding: 10px;
+                border-radius: 25px;
+                border: 1px solid black;
+            }
+            .buttons {
+                margin-top: 20px;
+            }
+            button {
+                background-color: gainsboro;
+                border: 1px solid gray;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            button:hover {
+                background-color: darkgray;
+            }
+            .links {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .links a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: black;
+            }
+            label{
+                padding-top: 200px;
+                margin-top: 200px;
+                margin-bottom: 200x;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="links">
+            <a href="googlesearch.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+        </div>
+        <div class="search-container">
+                <h2>Advanced Search</h2>
+                <form action="https://www.google.com/search">
+                    <label>Find pages with… “all these words:”</label>
+                    <input type="text" name="as_q">
+                    
+                    <label>Find pages with… “this exact word or phrase:”</label>
+                    <input type="text" name="as_epq">
+                    
+                    <label>Find pages with… “any of these words:”</label>
+                    <input type="text" name="as_oq">
+                    
+                    <label>Find pages with… “none of these words:”</label>
+                    <input type="text" name="as_eq">
+                    <button type="submit">Google Advanced Search</button>
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
